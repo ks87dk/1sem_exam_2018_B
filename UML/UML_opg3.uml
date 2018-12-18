@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Main</OriginalElement>
+  <nodes>
+    <node x="37.5" y="0.0">MediaID</node>
+    <node x="46.5" y="513.0">Test</node>
+    <node x="260.0" y="0.0">MediaManager</node>
+    <node x="8.0" y="124.0">Media</node>
+    <node x="0.0" y="614.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Media" target="MediaID">
+      <point x="0.0" y="-169.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="Test" target="Media">
+      <point x="-30.5" y="-25.5" />
+      <point x="77.0" y="488.0" />
+      <point x="57.75" y="488.0" />
+      <point x="-49.75" y="169.5" />
+    </edge>
+    <edge source="Main" target="Test">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="109.5" y="218.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
