@@ -33,18 +33,18 @@ public class MediaID {              // klasse med access modifier public, hvorve
 
             latestId++;
 
-            FileWriter fileWriter = new FileWriter(file);
+            FileWriter fileWriter = new FileWriter(file);   // instantierer et nyt objekt af Filewriter typen med identifieren fileWriter
             fileWriter.write(Integer.toString(latestId));
             fileWriter.close();
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException e) {       //catch metode, der printer stack trace for system.err, altså hvis der
+            e.printStackTrace();        // findes fejl oplyses fejlen(e) og hvor disse er sket.
         }
 
         // Låser filen ned for at den ikke redigeres ved en fejl
         // file.setReadOnly();
 
-        return latestId;
+        return latestId;    //returnerer værdien for variblen latestId til det kaldende objekt
     }
 
 }
