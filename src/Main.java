@@ -1,3 +1,10 @@
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
 public class Main {                                             // åben klasse, sådan at hvis der nedarves, kan klasser
                                                                 // nedarvet fra denne kunne tilgå elementer i denne.
                                                                 // klassens identifier er Main
@@ -21,7 +28,35 @@ public class Main {                                             // åben klasse,
                                                                 // en specifik constructor, tildeles denne automatisk en
                                                                 // no-arg constructor
 
-        Test.test();                                            // en metode
+        Test.test();                                            // kalder metoden test i test-klassen
+
+
+/*      DETTE VAR EN PRØVE, KODENLINJERNE KØRER, MEN VISER BARE FEJL EFTER FEJL
+        Path path = Paths.get("C:\\Users\\ks87d\\IdeaProjects\\1sem_exam_2018_B\\media");
+
+        try (Stream<Path> media_Content = Files.walk(path)) {
+
+            media_Content.forEach(System.out::println);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        public static void readMediaFolder(String Media)   {
+            File folder = new File(MEDIA_MAPPE);
+            File[] listOfFiles = folder.listFiles();
+
+            for (int i = 0; i < listOfFiles.length; i++) {
+                if (listOfFiles[i].isFile()) {
+                    System.out.println("File " + listOfFiles[i].getName());
+                } else if (listOfFiles[i].isDirectory()) {
+                    System.out.println("Directory " + listOfFiles[i].getName());
+                }
+            }
+
+        }
+*/
 
     }
 }

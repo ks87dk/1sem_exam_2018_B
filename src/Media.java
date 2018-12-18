@@ -1,6 +1,11 @@
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.Date;
+import java.util.stream.Stream;
 
 public class Media {
 
@@ -74,4 +79,6 @@ public class Media {
         System.out.println("name har værdien" + getName());
         System.out.println("created har værdien" + getCreated());
 
-}}
+
+    }
+}
