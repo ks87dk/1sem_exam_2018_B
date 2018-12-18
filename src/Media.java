@@ -22,6 +22,9 @@ public class Media {
     public Media() {
         assetId = MediaID.generate();
         created = Date.from(Instant.now());
+        Media obj1 = new Media();
+
+
     }
 
     public int getAssetId() {           // gettermetode med identifier´en: getAssetId, denne returnerer værdien som
@@ -56,6 +59,7 @@ public class Media {
         this.fileName = fileName;
     }
 
+
     @Override
     public String toString() {
         return "Media{" +
@@ -65,4 +69,9 @@ public class Media {
                 ", fileName='" + fileName + '\'' +
                 '}';
     }
-}
+    public void logToConsol(){
+        System.out.println("assetId har værdien" + getAssetId());
+        System.out.println("name har værdien" + getName());
+        System.out.println("created har værdien" + getCreated());
+
+}}
